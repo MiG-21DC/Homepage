@@ -9,7 +9,7 @@ def index():
 
 @app.route('/about')
 def about():
-    return "<h1 style='color:blue'>This site is built with Nginx, uWSGI and Flask on an Amazon Ubuntu server with SSL encrypted</h1>"
+    return render_template('about.html')
 
 
 if __name__ == "__main__":
