@@ -1,7 +1,8 @@
 from flask import Flask, render_template, send_file
 from flask_bootstrap import Bootstrap
 
-app = Flask(__name__, template_folder='../template')
+app = Flask(__name__)
+# app = Flask(__name__, template_folder='../template')
 Bootstrap(app)
 
 @app.route("/")
