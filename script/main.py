@@ -12,8 +12,13 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/testfield/<name>')
+def testfield(name='Stranger'):
+
+    return render_template('testfield.html', name=name)
+
 @app.route('/download/<filename>')
-def download(filename = None):
+def download(filename=None):
     if filename is None:
         return render_template('404.html')
     try:
