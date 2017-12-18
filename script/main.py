@@ -27,8 +27,8 @@ def download(filename=None):
         return render_template('404.html')
 
 @app.route('/video/<videoname>')
-def video(video_file=None):
-    return render_template('videotest.html', video_file='/home/shawn/Homepage/video/'+video_file)
+def video(videoname=None):
+    return render_template('videotest.html', video_file='/home/shawn/Homepage/video/'+videoname)
 
 
 if __name__ == "__main__":
